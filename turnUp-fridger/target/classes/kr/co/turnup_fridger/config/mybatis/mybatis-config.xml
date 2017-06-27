@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
 <configuration>
-<<<<<<< HEAD
+
 	<typeAliases>
 		<package name="kr.co.turnup_fridger.vo"/>
 	</typeAliases>
@@ -16,4 +16,4 @@
 	
 	</mappers>
 </configuration>
->>>>>>> branch 'master' of https://github.com/dhkdwns93/Shake-the-refrigerator.git
+

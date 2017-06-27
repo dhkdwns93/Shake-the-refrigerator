@@ -12,7 +12,6 @@ public class MyIrdnt {
 	private int irdntId;
 	private String irdntName;
 	private int fridgerId;
-	private String irdntName;
 	private Fridger fridger;
 	private IrdntManage irdntManage; 	
 	
