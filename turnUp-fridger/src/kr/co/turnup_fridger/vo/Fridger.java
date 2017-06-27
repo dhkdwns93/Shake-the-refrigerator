@@ -5,8 +5,9 @@ import java.util.List;
 public class Fridger {
 	private int fridgerId;
 	private String fridgerName;
+	private List<FridgerGroup> fridgerGroupList;
+
 	private List<MyIrdnt> myIrdntList;
-	
 	
 	public Fridger() {
 	}
@@ -26,6 +27,21 @@ public class Fridger {
 		this.fridgerName = fridgerName;
 		this.myIrdntList = myIrdntsList;
 	}
+
+	
+
+	
+
+
+
+	public Fridger(int fridgerId, String fridgerName, List<MyIrdnt> myIrdntsList,
+			List<FridgerGroup> fridgerGroupList) {
+		this.fridgerId = fridgerId;
+		this.fridgerName = fridgerName;
+		this.myIrdntList = myIrdntsList;
+		this.fridgerGroupList = fridgerGroupList;
+	}
+
 
 
 	public int getFridgerId() {
