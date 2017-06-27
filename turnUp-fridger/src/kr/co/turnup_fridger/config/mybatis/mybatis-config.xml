@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<typeAliases>
+		<package name="kr.co.turnup_fridger.vo"/>
+	</typeAliases>
+	<!-- environment를 설정하지 않음-> spring트랜젝션이 처리 -->
+	<mappers>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/fridgerMapper.xml"/>
+		
+	</mappers>
+	
+	
+	
+</configuration>

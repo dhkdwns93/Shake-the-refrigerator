@@ -1,10 +1,12 @@
 package kr.co.turnup_fridger.vo;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Fridger {
+public class Fridger implements Serializable{
 	private int fridgerId;
 	private String fridgerName;
+	private String memberId;
 	private List<FridgerGroup> fridgerGroupList;
 
 	private List<MyIrdnt> myIrdntList;
@@ -14,33 +16,48 @@ public class Fridger {
 	
 	
 
-	public Fridger(int fridgerId, String fridgerName) {
-		this.fridgerId = fridgerId;
-		this.fridgerName = fridgerName;
-	}
-
-
-
-
-	public Fridger(int fridgerId, String fridgerName, List<MyIrdnt> myIrdntsList) {
-		this.fridgerId = fridgerId;
-		this.fridgerName = fridgerName;
-		this.myIrdntList = myIrdntsList;
-	}
-
-	
-
 	
 
 
 
-	public Fridger(int fridgerId, String fridgerName, List<MyIrdnt> myIrdntsList,
-			List<FridgerGroup> fridgerGroupList) {
+	public Fridger(int fridgerId, String fridgerName, String memberId) {
 		this.fridgerId = fridgerId;
 		this.fridgerName = fridgerName;
-		this.myIrdntList = myIrdntsList;
+		this.memberId = memberId;
+	}
+
+	
+
+
+
+
+
+	public Fridger(int fridgerId, String fridgerName, String memberId, List<FridgerGroup> fridgerGroupList) {
+		this.fridgerId = fridgerId;
+		this.fridgerName = fridgerName;
+		this.memberId = memberId;
 		this.fridgerGroupList = fridgerGroupList;
 	}
+
+
+
+
+	
+
+
+
+	public Fridger(int fridgerId, String fridgerName, String memberId, List<FridgerGroup> fridgerGroupList,
+			List<MyIrdnt> myIrdntList) {
+		this.fridgerId = fridgerId;
+		this.fridgerName = fridgerName;
+		this.memberId = memberId;
+		this.fridgerGroupList = fridgerGroupList;
+		this.myIrdntList = myIrdntList;
+	}
+
+
+
+
 
 
 
@@ -63,6 +80,17 @@ public class Fridger {
 		this.fridgerName = fridgerName;
 	}
 
+	public String getMemberId() {
+		return memberId;
+	}
+
+
+
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+	
+	
 
 	public List<MyIrdnt> getMyIrdntList() {
 		return myIrdntList;
@@ -74,6 +102,7 @@ public class Fridger {
 	}
 
 
+	
 
 
 	@Override
@@ -113,7 +142,25 @@ public class Fridger {
 			return false;
 		return true;
 	}
-	
+
+
+
+	public List<FridgerGroup> getFridgerGroupList() {
+		return fridgerGroupList;
+	}
+
+
+
+	public void setFridgerGroupList(List<FridgerGroup> fridgerGroupList) {
+		this.fridgerGroupList = fridgerGroupList;
+	}
+
+
+
+
+
+
+
 	
 	
 

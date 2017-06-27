@@ -1,6 +1,8 @@
 package kr.co.turnup_fridger.vo;
 
-public class MyDislikeIrdnt {
+import java.io.Serializable;
+
+public class MyDislikeIrdnt implements Serializable{
 	private int myDislikeIrdntKey;
 	private int irdntId;
 	private String memberId;

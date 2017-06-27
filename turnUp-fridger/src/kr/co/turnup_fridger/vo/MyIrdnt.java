@@ -10,6 +10,7 @@ public class MyIrdnt {
 	private int freshLevel;
 	private String irdntCount;
 	private int irdntId;
+	private String irdntName;
 	private int fridgerId;
 	private Fridger fridger;
 	private IrdntManage irdntManage; 	

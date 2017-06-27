@@ -9,19 +9,19 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 	
-	<context:component-scan base-package="domain.service.impl,domain.dao.impl"/>
+	<context:component-scan base-package="kr.co.turnup_fridger.service.impl, kr.co.turnup_fridger.dao.impl"/>
 	
 	<!-- mybatis 설정 -->
 	<bean name="dataSource" class="org.apache.tomcat.dbcp.dbcp2.BasicDataSource"
 			  p:driverClassName="oracle.jdbc.driver.OracleDriver"
 			  p:url="jdbc:oracle:thin:@127.0.0.1:1521:XE"
-			  p:username="scott"
-			  p:password="tiger"
+			  p:username="tuf"
+			  p:password="turnup"
 			  p:initialSize="1"
 			  p:maxTotal="100"/>
 	<bean 	name="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean"
 			   	p:dataSource-ref="dataSource"
-			   	p:configLocation="classpath:domain/config/mybatis/mybatis-config.xml"/>
+			   	p:configLocation="classpath:kr/co/turnup_fridger/config/mybatis/mybatis-config.xml"/>
 	<bean 	name="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate"
 				c:sqlSessionFactory-ref="sqlSessionFactoryBean"/>
 	

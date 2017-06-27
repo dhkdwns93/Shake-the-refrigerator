@@ -1,6 +1,8 @@
 package kr.co.turnup_fridger.vo;
 
-public class FavoriteRecipe {
+import java.io.Serializable;
+
+public class FavoriteRecipe implements Serializable{
 	private int favoriteRecipeKey;
 	private String memberId;
 	private int recipeId;
