@@ -11,7 +11,7 @@ public class IrdntManage implements Serializable{
 	private MyIrdnt myIrdnt;
 	private ShareRecipeIrdnt shareRecipeIrdnt;
 	private MyDislikeIrdnt myDislikeIrdnt;
-	private ViewTnRecipeIrdnt viewTnRecipeIrdnt;
+	private RecipeIrdnt RecipeIrdnt;
 	
 	
 	

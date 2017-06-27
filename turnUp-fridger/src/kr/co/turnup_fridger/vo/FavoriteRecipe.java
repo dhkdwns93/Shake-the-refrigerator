@@ -6,7 +6,7 @@ public class FavoriteRecipe {
 	private int recipeId;
 	
 	private Member member;
-	private ViewTnRecipeInfo recipeInfo;
+	private RecipeInfo recipeInfo;
 	
 	public FavoriteRecipe() {
 	}
@@ -24,7 +24,7 @@ public class FavoriteRecipe {
 		this.member = member;
 	}
 
-	public FavoriteRecipe(int favoriteRecipeKey, String memberId, int recipeId, ViewTnRecipeInfo recipeInfo) {
+	public FavoriteRecipe(int favoriteRecipeKey, String memberId, int recipeId, RecipeInfo recipeInfo) {
 		this.favoriteRecipeKey = favoriteRecipeKey;
 		this.memberId = memberId;
 		this.recipeId = recipeId;
@@ -32,7 +32,7 @@ public class FavoriteRecipe {
 	}
 
 	public FavoriteRecipe(int favoriteRecipeKey, String memberId, int recipeId, Member member,
-			ViewTnRecipeInfo recipeInfo) {
+			RecipeInfo recipeInfo) {
 		this.favoriteRecipeKey = favoriteRecipeKey;
 		this.memberId = memberId;
 		this.recipeId = recipeId;
@@ -72,11 +72,11 @@ public class FavoriteRecipe {
 		this.member = member;
 	}
 
-	public ViewTnRecipeInfo getRecipeInfo() {
+	public RecipeInfo getRecipeInfo() {
 		return recipeInfo;
 	}
 
-	public void setRecipeInfo(ViewTnRecipeInfo recipeInfo) {
+	public void setRecipeInfo(RecipeInfo recipeInfo) {
 		this.recipeInfo = recipeInfo;
 	}
 

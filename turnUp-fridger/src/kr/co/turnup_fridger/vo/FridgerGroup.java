@@ -7,7 +7,7 @@ public class FridgerGroup implements Serializable{
 	private int groupJoinSeq;
 	private String memberId;
 	private int fridgerId;
-	private Fridger friger;
+	private Fridger fridger;
 	private Member member;
 	
 	public FridgerGroup() {
@@ -24,12 +24,12 @@ public class FridgerGroup implements Serializable{
 	
 
 
-	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Fridger friger) {
+	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Fridger fridger) {
 		this.groupKey = groupKey;
 		this.groupJoinSeq = groupJoinSeq;
 		this.memberId = memberId;
 		this.fridgerId = fridgerId;
-		this.friger = friger;
+		this.fridger = fridger;
 	}
 	
 	
@@ -44,12 +44,12 @@ public class FridgerGroup implements Serializable{
 	}
 
 
-	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Fridger friger, Member member) {
+	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Fridger fridger, Member member) {
 		this.groupKey = groupKey;
 		this.groupJoinSeq = groupJoinSeq;
 		this.memberId = memberId;
 		this.fridgerId = fridgerId;
-		this.friger = friger;
+		this.fridger = fridger;
 		this.member = member;
 	}
 
@@ -94,13 +94,13 @@ public class FridgerGroup implements Serializable{
 	}
 	
 
-	public Fridger getFriger() {
-		return friger;
+	public Fridger getfridger() {
+		return fridger;
 	}
 
 
-	public void setFriger(Fridger friger) {
-		this.friger = friger;
+	public void setfridger(Fridger fridger) {
+		this.fridger = fridger;
 	}
 	
 
