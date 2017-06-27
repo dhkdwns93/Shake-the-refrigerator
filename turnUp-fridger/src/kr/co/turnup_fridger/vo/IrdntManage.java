@@ -5,13 +5,11 @@ import java.util.Date;
 
 public class IrdntManage implements Serializable{
 
-	private int myIrdntsKey;
-	private Date startDate;
-	private Date endDate;
-	private int freshLevel;
-	private String irdntCount;
 	private int irdntId;
-	private int fridgerId;
+	private String irdntNm;
+	private int irdntPeriod;
+	private String irdntCategory;
+	
 	
 	
 }
