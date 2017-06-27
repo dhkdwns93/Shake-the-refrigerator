@@ -5,7 +5,7 @@ import java.util.List;
 public class Fridger {
 	private int fridgerId;
 	private String fridgerName;
-	private List<MyIrdnts> myIrdntsList;
+	private List<MyIrdnt> myIrdntList;
 	
 	
 	public Fridger() {
@@ -21,10 +21,10 @@ public class Fridger {
 
 
 
-	public Fridger(int fridgerId, String fridgerName, List<MyIrdnts> myIrdntsList) {
+	public Fridger(int fridgerId, String fridgerName, List<MyIrdnt> myIrdntsList) {
 		this.fridgerId = fridgerId;
 		this.fridgerName = fridgerName;
-		this.myIrdntsList = myIrdntsList;
+		this.myIrdntList = myIrdntsList;
 	}
 
 
@@ -48,13 +48,13 @@ public class Fridger {
 	}
 
 
-	public List<MyIrdnts> getMyIrdntsList() {
-		return myIrdntsList;
+	public List<MyIrdnt> getMyIrdntList() {
+		return myIrdntList;
 	}
 
 
-	public void setMyIrdntsList(List<MyIrdnts> myIrdntsList) {
-		this.myIrdntsList = myIrdntsList;
+	public void setMyIrdntList(List<MyIrdnt> myIrdntsList) {
+		this.myIrdntList = myIrdntsList;
 	}
 
 
@@ -62,7 +62,7 @@ public class Fridger {
 
 	@Override
 	public String toString() {
-		return "Fridger [fridgerId=" + fridgerId + ", fridgerName=" + fridgerName + ", myIrdntsList=" + myIrdntsList
+		return "Fridger [fridgerId=" + fridgerId + ", fridgerName=" + fridgerName + ", myIrdntList=" + myIrdntList
 				+ "]";
 	}
 

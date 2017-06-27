@@ -1,7 +1,6 @@
 package kr.co.turnup_fridger.vo;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class IrdntManage implements Serializable{
 
@@ -9,6 +8,10 @@ public class IrdntManage implements Serializable{
 	private String irdntName;
 	private int irdntPeriod;
 	private String irdntCategory;
+	private MyIrdnt myIrdnt;
+	private ShareRecipeIrdnt shareRecipeIrdnt;
+	private MyDislikeIrdnt myDislikeIrdnt;
+	private ViewTnRecipeIrdnt viewTnRecipeIrdnt;
 	
 	
 	

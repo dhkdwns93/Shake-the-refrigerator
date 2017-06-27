@@ -2,9 +2,9 @@ package kr.co.turnup_fridger.vo;
 
 import java.util.Date;
 
-public class MyIrdnts {
+public class MyIrdnt {
 
-	private int myIrdntsKey;
+	private int myIrdntKey;
 	private Date startDate;
 	private Date endDate;
 	private int freshLevel;

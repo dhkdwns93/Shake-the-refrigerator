@@ -1,27 +1,27 @@
 package kr.co.turnup_fridger.vo;
 
-public class MyDislikeIrdnts {
-	private int myDislikeIrdntsKey;
+public class MyDislikeIrdnt {
+	private int myDislikeIrdntKey;
 	private int irdntId;
 	private String memberId;
 	private Member member;
 	
 	
-	public MyDislikeIrdnts() {
+	public MyDislikeIrdnt() {
 	}
 	
 
 
-	public MyDislikeIrdnts(int myDislikeIrdntsKey, int irdntId, String memberId) {
-		this.myDislikeIrdntsKey = myDislikeIrdntsKey;
+	public MyDislikeIrdnt(int myDislikeIrdntsKey, int irdntId, String memberId) {
+		this.myDislikeIrdntKey = myDislikeIrdntsKey;
 		this.irdntId = irdntId;
 		this.memberId = memberId;
 	}
 
 
 
-	public MyDislikeIrdnts(int myDislikeIrdntsKey, int irdntId, String memberId, Member member) {
-		this.myDislikeIrdntsKey = myDislikeIrdntsKey;
+	public MyDislikeIrdnt(int myDislikeIrdntsKey, int irdntId, String memberId, Member member) {
+		this.myDislikeIrdntKey = myDislikeIrdntsKey;
 		this.irdntId = irdntId;
 		this.memberId = memberId;
 		this.member = member;
@@ -30,13 +30,13 @@ public class MyDislikeIrdnts {
 
 
 	public int getMyDislikeIrdntsKey() {
-		return myDislikeIrdntsKey;
+		return myDislikeIrdntKey;
 	}
 
 
 
 	public void setMyDislikeIrdntsKey(int myDislikeIrdntsKey) {
-		this.myDislikeIrdntsKey = myDislikeIrdntsKey;
+		this.myDislikeIrdntKey = myDislikeIrdntsKey;
 	}
 
 
@@ -83,7 +83,7 @@ public class MyDislikeIrdnts {
 		int result = 1;
 		result = prime * result + irdntId;
 		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
-		result = prime * result + myDislikeIrdntsKey;
+		result = prime * result + myDislikeIrdntKey;
 		return result;
 	}
 
@@ -97,7 +97,7 @@ public class MyDislikeIrdnts {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MyDislikeIrdnts other = (MyDislikeIrdnts) obj;
+		MyDislikeIrdnt other = (MyDislikeIrdnt) obj;
 		if (irdntId != other.irdntId)
 			return false;
 		if (memberId == null) {
@@ -105,7 +105,7 @@ public class MyDislikeIrdnts {
 				return false;
 		} else if (!memberId.equals(other.memberId))
 			return false;
-		if (myDislikeIrdntsKey != other.myDislikeIrdntsKey)
+		if (myDislikeIrdntKey != other.myDislikeIrdntKey)
 			return false;
 		return true;
 	}
@@ -114,7 +114,7 @@ public class MyDislikeIrdnts {
 
 	@Override
 	public String toString() {
-		return "MyDislikeIrdnts [myDislikeIrdntsKey=" + myDislikeIrdntsKey + ", irdntId=" + irdntId + ", memberId="
+		return "MyDislikeIrdnt [myDislikeIrdntKey=" + myDislikeIrdntKey + ", irdntId=" + irdntId + ", memberId="
 				+ memberId + ", member=" + member + "]";
 	}
 	
