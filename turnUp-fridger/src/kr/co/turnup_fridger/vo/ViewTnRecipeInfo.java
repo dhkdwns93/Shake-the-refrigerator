@@ -1,5 +1,7 @@
 package kr.co.turnup_fridger.vo;
 
-public class ViewTnRecipeInfo {
+import java.io.Serializable;
+
+public class ViewTnRecipeInfo implements Serializable{
 
 }
