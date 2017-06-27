@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
+	<typeAliases>
+		<package name="kr.co.turnup_fridger.vo"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/MyIrdntMapper.xml"/>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/IrdntManageMapper.xml"/>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/RecipeInfoMapper.xml"/>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/RecipeIrdntMapper.xml"/>
+		<mapper resource="kr/co/turnup_fridger/config/mybatis/mapper/RecipeCrseMapper.xml"/>
+	
+	</mappers>
+</configuration>

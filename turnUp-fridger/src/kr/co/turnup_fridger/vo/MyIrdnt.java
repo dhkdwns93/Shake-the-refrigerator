@@ -11,6 +11,7 @@ public class MyIrdnt {
 	private String irdntCount;
 	private int irdntId;
 	private int fridgerId;
+	private String irdntName;
 	private Fridger fridger;
 	private IrdntManage irdntManage; 	
 	
@@ -19,7 +20,7 @@ public class MyIrdnt {
 	}
 
 	public MyIrdnt(int myIrdntKey, Date startDate, Date endDate, int freshLevel, String irdntCount, int irdntId,
-			int fridgerId, Fridger fridger, IrdntManage irdntManage) {
+			int fridgerId, String irdntName, Fridger fridger, IrdntManage irdntManage) {
 		this.myIrdntKey = myIrdntKey;
 		this.startDate = startDate;
 		this.endDate = endDate;
@@ -27,6 +28,7 @@ public class MyIrdnt {
 		this.irdntCount = irdntCount;
 		this.irdntId = irdntId;
 		this.fridgerId = fridgerId;
+		this.irdntName = irdntName;
 		this.fridger = fridger;
 		this.irdntManage = irdntManage;
 	}
@@ -87,6 +89,14 @@ public class MyIrdnt {
 		this.fridgerId = fridgerId;
 	}
 
+	public String getIrdntName() {
+		return irdntName;
+	}
+
+	public void setIrdntName(String irdntName) {
+		this.irdntName = irdntName;
+	}
+
 	public Fridger getFridger() {
 		return fridger;
 	}
@@ -107,7 +117,8 @@ public class MyIrdnt {
 	public String toString() {
 		return "MyIrdnt [myIrdntKey=" + myIrdntKey + ", startDate=" + startDate + ", endDate=" + endDate
 				+ ", freshLevel=" + freshLevel + ", irdntCount=" + irdntCount + ", irdntId=" + irdntId + ", fridgerId="
-				+ fridgerId + ", fridger=" + fridger + ", irdntManage=" + irdntManage + "]";
+				+ fridgerId + ", irdntName=" + irdntName + ", fridger=" + fridger + ", irdntManage=" + irdntManage
+				+ "]";
 	}
 
 	@Override
@@ -121,6 +132,7 @@ public class MyIrdnt {
 		result = prime * result + ((irdntCount == null) ? 0 : irdntCount.hashCode());
 		result = prime * result + irdntId;
 		result = prime * result + ((irdntManage == null) ? 0 : irdntManage.hashCode());
+		result = prime * result + ((irdntName == null) ? 0 : irdntName.hashCode());
 		result = prime * result + myIrdntKey;
 		result = prime * result + ((startDate == null) ? 0 : startDate.hashCode());
 		return result;
@@ -160,6 +172,11 @@ public class MyIrdnt {
 			if (other.irdntManage != null)
 				return false;
 		} else if (!irdntManage.equals(other.irdntManage))
+			return false;
+		if (irdntName == null) {
+			if (other.irdntName != null)
+				return false;
+		} else if (!irdntName.equals(other.irdntName))
 			return false;
 		if (myIrdntKey != other.myIrdntKey)
 			return false;
