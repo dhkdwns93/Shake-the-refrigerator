@@ -31,7 +31,7 @@ public class InsertMethod {
 			
 			switch (fileName) {
 			// 레시피재료정보
-			case "view_tn_recipe_irdnt":
+			case "recipe_irdnt":
 				// String sql = "insert into view_tn_recipe_irdnt values(?,?,?,?,?,?)";
 				sql = "insert into " + fileName + " values(?,?,?,?,?,?,?)";
 				pstmt = conn.prepareStatement(sql);
@@ -57,7 +57,7 @@ public class InsertMethod {
 				System.out.println("재료 자료 넣기 완료");
 				break;
 			// 레시피 과정정보
-			case "view_tn_recipe_crse":
+			case "recipe_crse":
 				sql = "insert into " + fileName + " values(?,?,?,?,?)";
 				pstmt = conn.prepareStatement(sql);
 				while ((line = in.readLine()) != null) {
@@ -74,7 +74,7 @@ public class InsertMethod {
 				System.out.println("레시피과정정보 자료 넣기 완료");
 				break;
 			// 레시피 기본정보
-			case "view_tn_recipe_info":
+			case "recipe_info":
 				sql = "insert into " + fileName + " values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 				pstmt = conn.prepareStatement(sql);
 				while ((line = in.readLine()) != null) {
