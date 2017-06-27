@@ -24,6 +24,7 @@
       </plugin>
     </plugins>
   </build>
+<<<<<<< HEAD
   	<properties>
 		<spring.version>4.3.9.RELEASE</spring.version>
 		<spring-security.version>4.1.4.RELEASE</spring-security.version>
@@ -87,4 +88,7 @@
 		</dependency>
 
 	</dependencies>
+=======
+
+>>>>>>> branch 'master' of https://github.com/dhkdwns93/Shake-the-refrigerator.git
 </project>
