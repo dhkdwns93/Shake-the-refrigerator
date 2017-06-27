@@ -6,7 +6,7 @@ public class Fridger {
 	private int fridgerId;
 	private String fridgerName;
 	private List<MyIrdnts> myIrdntsList;
-	
+	private List<FridgerGroup> fridgerGroupList;
 	
 	public Fridger() {
 	}
@@ -26,6 +26,21 @@ public class Fridger {
 		this.fridgerName = fridgerName;
 		this.myIrdntsList = myIrdntsList;
 	}
+
+	
+
+	
+
+
+
+	public Fridger(int fridgerId, String fridgerName, List<MyIrdnts> myIrdntsList,
+			List<FridgerGroup> fridgerGroupList) {
+		this.fridgerId = fridgerId;
+		this.fridgerName = fridgerName;
+		this.myIrdntsList = myIrdntsList;
+		this.fridgerGroupList = fridgerGroupList;
+	}
+
 
 
 	public int getFridgerId() {
