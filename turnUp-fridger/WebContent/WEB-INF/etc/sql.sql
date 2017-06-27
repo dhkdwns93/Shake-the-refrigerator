@@ -10,7 +10,7 @@ CREATE TABLE MEMBER (
    MEMBER_TEL VARCHAR2(20) NOT NULL, /* 핸드폰번호 */
    MEMBER_SEX VARCHAR2(10) NOT NULL /* 성별 */
 );
-
+select * from member;
 
 /* 개인 메모 */
 DROP TABLE MY_MEMO;
