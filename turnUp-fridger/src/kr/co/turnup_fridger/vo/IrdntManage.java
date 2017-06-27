@@ -6,9 +6,10 @@ import java.util.Date;
 public class IrdntManage implements Serializable{
 
 	private int irdntId;
-	private String irdntNm;
+	private String irdntName;
 	private int irdntPeriod;
 	private String irdntCategory;
+	
 	
 	
 	

@@ -11,5 +11,7 @@ public class MyIrdnts {
 	private String irdntCount;
 	private int irdntId;
 	private int fridgerId;
+	private Fridger fridger;
+	private IrdntManage irdntManage; 	
 	
 }
