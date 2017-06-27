@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.dao.impl;
+package kr.co.turnup_fridger.dao.impl;
 
 public class MemberDaoImpl {
 

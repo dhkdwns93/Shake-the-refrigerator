@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.service.impl;
+package kr.co.turnup_fridger.service.impl;
 
 public class MemberServiceImpl {
 

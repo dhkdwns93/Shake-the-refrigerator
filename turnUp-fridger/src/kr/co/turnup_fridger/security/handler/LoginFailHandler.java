@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.security.handler;
+package kr.co.turnup_fridger.security.handler;
 
 public class LoginFailHandler {
 

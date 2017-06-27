@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.dao;
+package kr.co.turnup_fridger.dao;
 
 public interface MemberDao {
 

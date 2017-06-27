@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.security.provider;
+package kr.co.turnup_fridger.security.provider;
 
 public class UserAuthenticationProvider {
 

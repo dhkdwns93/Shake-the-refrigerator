@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.service;
+package kr.co.turnup_fridger.service;
 
 public interface MemberService {
 

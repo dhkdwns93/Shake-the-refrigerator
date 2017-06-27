@@ -1,4 +1,4 @@
-package kr.co.turnUp_fridger.controller.member;
+package kr.co.turnup_fridger.controller.member;
 
 public class MemberController {
 
