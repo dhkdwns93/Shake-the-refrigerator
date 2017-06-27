@@ -328,9 +328,10 @@ CREATE TABLE RECIPE_IRDNT (
    CONSTRAINT VTRI_RECIPE_ID_FK FOREIGN KEY(RECIPE_ID) REFERENCES RECIPE_INFO,
    CONSTRAINT VTRI_IRDNT_ID_FK FOREIGN KEY(IRDNT_ID) REFERENCES IRDNT_MANAGE
 );
-select count(*) from view_tn_recipe_crse;
---select count(*) from view_tn_recipe_info;
---select count(*) from view_tn_recipe_irdnt;
+
+select count(*) from recipe_crse;
+select count(*) from recipe_info;
+select count(*) from recipe_irdnt;
 
 /* 즐겨찾기 */
 DROP TABLE FAVORITE_RECIPE;
