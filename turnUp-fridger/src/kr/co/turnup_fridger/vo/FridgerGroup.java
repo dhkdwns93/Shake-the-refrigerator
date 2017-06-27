@@ -8,6 +8,7 @@ public class FridgerGroup implements Serializable{
 	private String memberId;
 	private int fridgerId;
 	private Fridger friger;
+	private Member member;
 	
 	public FridgerGroup() {
 	}
@@ -29,6 +30,27 @@ public class FridgerGroup implements Serializable{
 		this.memberId = memberId;
 		this.fridgerId = fridgerId;
 		this.friger = friger;
+	}
+	
+	
+	
+
+	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Member member) {
+		this.groupKey = groupKey;
+		this.groupJoinSeq = groupJoinSeq;
+		this.memberId = memberId;
+		this.fridgerId = fridgerId;
+		this.member = member;
+	}
+
+
+	public FridgerGroup(int groupKey, int groupJoinSeq, String memberId, int fridgerId, Fridger friger, Member member) {
+		this.groupKey = groupKey;
+		this.groupJoinSeq = groupJoinSeq;
+		this.memberId = memberId;
+		this.fridgerId = fridgerId;
+		this.friger = friger;
+		this.member = member;
 	}
 
 
@@ -82,6 +104,18 @@ public class FridgerGroup implements Serializable{
 	}
 	
 
+	public Member getMember() {
+		return member;
+	}
+
+
+	public void setMember(Member member) {
+		this.member = member;
+	}
+	
+	
+	
+
 
 	@Override
 	public int hashCode() {
@@ -128,8 +162,7 @@ public class FridgerGroup implements Serializable{
 		return "FridgerGroup [groupKey=" + groupKey + ", groupJoinSeq=" + groupJoinSeq + ", memberId=" + memberId
 				+ ", fridgerId=" + fridgerId + "]";
 	}
-	
-	
-	
+
+
 	
 }
