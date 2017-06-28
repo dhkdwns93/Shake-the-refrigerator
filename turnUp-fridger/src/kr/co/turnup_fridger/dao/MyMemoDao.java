@@ -2,8 +2,6 @@ package kr.co.turnup_fridger.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.session.SqlSession;
-
 import kr.co.turnup_fridger.vo.MyMemo;
 
 public interface MyMemoDao {
@@ -14,7 +12,7 @@ public interface MyMemoDao {
 	 * @param memo
 	 * @return
 	 */
-	public int insertMemo(SqlSession session, MyMemo memo);
+	public int insertMemo(MyMemo memo);
 	
 	/**
 	 * 한개의 장바구니 메모정보를 수정하는 메소드
@@ -22,7 +20,7 @@ public interface MyMemoDao {
 	 * @param memo
 	 * @return
 	 */
-	public int updateMemo(SqlSession session, MyMemo memo);
+	public int updateMemo(MyMemo memo);
 	
 	/**
 	 * 한개의 장바구니 메모정보를 삭제하는 메소드
@@ -30,7 +28,7 @@ public interface MyMemoDao {
 	 * @param memoId
 	 * @return
 	 */
-	public int deleteMemo(SqlSession session, int memoId);
+	public int deleteMemo(int memoId);
 	
 	/**
 	 * 회원당 작성한 메모의 리스트를 조회하는 메소드
@@ -38,7 +36,7 @@ public interface MyMemoDao {
 	 * @param memberId
 	 * @return
 	 */
-	public List<MyMemo> selectMemoList(SqlSession session, String memberId);
+	public List<MyMemo> selectMemoList(String memberId);
 	
 	/**
 	 * 하나의 메모정보를 조회하는 메소드
@@ -46,7 +44,7 @@ public interface MyMemoDao {
 	 * @param memoId
 	 * @return
 	 */
-	public MyMemo selectOneMemo(SqlSession session, int memoId);
+	public MyMemo selectOneMemo(int memoId);
 	
 	/**
 	 * 회원당 자신이 쓴 메모의 개수를 조회하는 메소드
@@ -54,6 +52,6 @@ public interface MyMemoDao {
 	 * @param memberId
 	 * @return
 	 */
-	public int selectMemoCount(SqlSession session, String memberId);
+	public int selectMemoCount(String memberId);
 	
 }
